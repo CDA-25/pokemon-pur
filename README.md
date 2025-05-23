@@ -21,5 +21,7 @@ CONTENU ! :
 - Page détails d'un pokémon avec un header, une section qui affiche les détails du pokémon (image, nom, type, description, stats et toutes autres données utils) et un footer
 - Le tout doit etre responsive et s'adapter à toutes les tailles d'écran  
 
+- le lien du site des pokemons: https://pokebuildapi.fr/api/v1
+
 le site que je trouve le plus propre (en terme de code) et visuelement le plus beau,  
 sera hébergé et pourra etre utilisé pour le passage du diplome !
