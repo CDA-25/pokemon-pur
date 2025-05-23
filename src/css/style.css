@@ -7,13 +7,17 @@
 }
 
 body {
-background-color: black;
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: antiquewhite;
+    margin-right: 30px;
+    margin-left: 30px;
 
 }
 
 .title {
-    color: yellow;
-    text-shadow: -2px -2px 0 blue, 2px -2px 0 blue, -2px 2px 0 blue, 2px 2px 0 blue;
+    color: #E8B804;
+    text-shadow: -4px -4px 0 #3A5EAA, 4px -4px 0 #3A5EAA, -4px 4px 0 #3A5EAA, 4px 4px 0 #3A5EAA;
     text-align: center;
     font-family: "Pokemon Solid";
     letter-spacing: 6px;
@@ -21,32 +25,94 @@ background-color: black;
 }
 
 .lowTitle {
-    color: yellow;
-    text-shadow: -0.5px -0.5px 0 blue, 0.5px -0.5px 0 blue, -0.5px 0.5px 0 blue, 0.5px 0.5px 0 blue;
+    color: #E8B804;
+    text-shadow: -2px -2px 0 #3A5EAA, -2px -2px 0 #3A5EAA, -2px 2px 0 #3A5EAA, 2px 2px 0 #3A5EAA;
     text-align: center;
     font-size: 50px;
-
 }
 
-
-header, .footer {
-    padding: 20px;
+.headerOther {
     display: flex;
     justify-content: space-between;
 }
 
-img {
+.headerAccueil {
+    display: flex;
+    justify-content: center;
+}
+
+.containerSearch {
+    display: flex;
+    justify-content: center;
+    gap : 10%;
+    width: 15%;
+    height: 30px;
+    border-radius: 25px;
+    background-color: #f6cf57;
+}
+
+.pokeball {
+    margin-top: 20px;
     width: 50px;
     height: 50px;
- 
 }
 
 .search {
-    color: antiquewhite;
+    background: none;
+    border: none;
+    outline: none;
 }
 
+
 .footer {
-    color: antiquewhite;
+    margin-top: 50px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
     list-style: none;
     font-size: medium;
+    padding: 0;
+}
+
+.imgAccueil {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width : 90%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.imgAccueil img {
+    width : 100%;
+    height: auto;
+}
+
+.btn {
+    background-color: #ffed4d;
+    border: solid 2px #3A5EAA;
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+    font-family: "Pokemon Solid";
+    letter-spacing: 2px;
+    font-size: medium;
+    color: black;
+}
+
+.btn:hover {
+    background-color: #f6cf57;
+
+}
+
+.btnRepertoire {
+    position: absolute;
+    top : 20%;
+    left : 40%; 
+}
+
+.pokedex {
+    width: 20%;
+    height: auto;
 }
