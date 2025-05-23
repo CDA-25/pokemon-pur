@@ -21,14 +21,14 @@ body {
     text-align: center;
     font-family: "Pokemon Solid";
     letter-spacing: 6px;
-    font-size: 80px;
+    font-size: 5rem;
 }
 
 .lowTitle {
     color: #E8B804;
     text-shadow: -2px -2px 0 #3A5EAA, -2px -2px 0 #3A5EAA, -2px 2px 0 #3A5EAA, 2px 2px 0 #3A5EAA;
     text-align: center;
-    font-size: 50px;
+    font-size: 3rem;
 }
 
 .headerOther {
@@ -68,10 +68,12 @@ body {
     margin-top: 50px;
     padding-top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap : 50px;
     list-style: none;
     font-size: medium;
     padding: 0;
+    color: #f6cf57;
 }
 
 .imgAccueil {
