@@ -13,16 +13,18 @@ background-color: black;
 
 .title {
     color: yellow;
-    text-shadow: -1px -1px 0 blue, 1px -1px 0 blue, -1px 1px 0 blue, 1px 1px 0 blue;
+    text-shadow: -2px -2px 0 blue, 2px -2px 0 blue, -2px 2px 0 blue, 2px 2px 0 blue;
     text-align: center;
     font-family: "Pokemon Solid";
     letter-spacing: 6px;
+    font-size: 80px;
 }
 
 .lowTitle {
     color: yellow;
-    text-shadow: -0.3px -0.3px 0 blue, 0.3px -0.3px 0 blue, -0.3px 0.3px 0 blue, 0.3px 0.3px 0 blue;
+    text-shadow: -0.5px -0.5px 0 blue, 0.5px -0.5px 0 blue, -0.5px 0.5px 0 blue, 0.5px 0.5px 0 blue;
     text-align: center;
+    font-size: 50px;
 
 }
 
@@ -46,5 +48,5 @@ img {
 .footer {
     color: antiquewhite;
     list-style: none;
-    font-size: xx-small;
+    font-size: medium;
 }
