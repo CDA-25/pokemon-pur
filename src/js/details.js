@@ -1,26 +1,30 @@
-import ServicePokemon from './services/ServicePokemon.js';
+document.addEventListener('DOMContentLoaded', () => {
+  const boutonRetour = document.getElementById('btnRetour');
+  if (boutonRetour) {
+    boutonRetour.addEventListener('click', () => {
+      window.history.back(); // Retourne à la page précédente (repertoire.html)
+    });
+  }
 
-document.addEventListener('DOMContentLoaded', async () => {
-  const params = new URLSearchParams(window.location.search);
-  const id = params.get('id');
-  const conteneur = document.querySelector('.detailsPokemon');
-  const boutonRetour = document.querySelector('.boutonRetour');
+  const sectionDetail = document.getElementById('detailPokemon');
+  const pokemon = JSON.parse(localStorage.getItem('pokemonSelectionne'));
 
-  const service = new ServicePokemon();
-  const pokemon = await service.recupererPokemonParId(id);
+  if (!pokemon) {
+    sectionDetail.innerHTML = '<p>Aucun pokémon sélectionné.</p>';
+    return;
+  }
 
-  conteneur.innerHTML = `
-    <h1>${pokemon.name.fr}</h1>
-    <img src="${pokemon.image}" alt="${pokemon.name.fr}">
-    <p><strong>Type(s):</strong> ${pokemon.apiTypes.map(t => t.name).join(', ')}</p>
-    <p><strong>Description:</strong> ${pokemon.apiGeneration.name}</p>
-    <p><strong>Stats:</strong></p>
-    <ul>
-      ${Object.entries(pokemon.stats).map(([key, val]) => `<li>${key} : ${val}</li>`).join('')}
-    </ul>
-  `;
+  const titre = document.createElement('h2');
+  titre.textContent = pokemon.name?.fr || pokemon.name || 'Nom inconnu';
 
-  boutonRetour.addEventListener('click', () => {
-    window.location.href = 'repertoire.html';
-  });
+  const image = document.createElement('img');
+  image.src = pokemon.image;
+  image.alt = pokemon.name?.fr;
+
+  const infos = document.createElement('p');
+  infos.textContent = `Type : ${pokemon.apiTypes?.map(t => t.name).join(', ')}`;
+
+  sectionDetail.appendChild(titre);
+  sectionDetail.appendChild(image);
+  sectionDetail.appendChild(infos);
 });
