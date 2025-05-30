@@ -3,21 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Répertoire Pokémon</title>
+  <title>Détails Pokémon</title>
   <link rel="stylesheet" href="./src/css/style.css" />
-  <script type="module" src="./src/js/repertoire.js" defer></script>
+  <script type="module" src="./src/js/details.js" defer></script>
 </head>
 <body>
   <header class="headerOther">
-    <h1>POKEDEX PORTAL</h1>
-    <input
-      type="text"
-      class="recherche"
-      placeholder="Rechercher par nom, numéro ou type"
-    />
+    <button id="btnRetour" class="btn">Retour</button>
   </header>
   <main>
-    <section class="contenuCartes"></section>
+    <section id="detailPokemon"></section>
   </main>
   <footer>
     <ul class="footer">

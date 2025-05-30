@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pokedex</title>
-    <script>
-      src = "./src/js/script.js";
-    </script>
-    <link rel="stylesheet" href="./src/css/style.css" />
-  </head>
-  <body>
-    <header class = "headerAccueil">
-      <img src="./Photo/pikadance.gif" alt="Un Pikachu qui danse" />
-    </header>
-    <main>
-      <h1 class="title">Bienvenue sur le Pokedex</h1>
-      <p class="lowTitle">Le pokedex le plus évolué du net !</p>
-      <div class="imgAccueil">
-        <img src="./Photo/accueilpkmn.jpg" alt="Image de Pokemon">
-        <button class = "btn btnRepertoire" type="button"> Accéder au pokedex</button>
-      </div>
-    </main>
-    <footer>
-      <ul class="footer">
-        <li>Nous contacter</li>
-        <li>Qui sommes nous ?</li>
-        <li>Politique de confidentialité</li>
-        <li>Mentions légales</li>
-      </ul>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokedex - Accueil</title>
+  <link rel="stylesheet" href="./src/css/style.css" />
+  <script type="module" src="./src/js/accueil.js" defer></script>
+</head>
+<body>
+  <header class="headerAccueil">
+    <img src="./Photo/pikadance.gif" alt="Un Pikachu qui danse" />
+  </header>
+  <main>
+    <h1 class="title">Bienvenue sur le Pokedex</h1>
+    <p class="lowTitle">Le pokedex le plus évolué du net !</p>
+    <div class="imgAccueil">
+      <img src="./Photo/accueilpkmn.jpg" alt="Image de Pokemon" />
+      <button class="btn btnRepertoire" type="button" id="btnAccederPokedex">Accéder au pokedex</button>
+    </div>
+  </main>
+  <footer>
+    <ul class="footer">
+      <li>Nous contacter</li>
+      <li>Qui sommes nous ?</li>
+      <li>Politique de confidentialité</li>
+      <li>Mentions légales</li>
+    </ul>
+  </footer>
+</body>
 </html>
