@@ -21,6 +21,13 @@ window.addEventListener('load', async () => {
     document.querySelector('#pokemonName').textContent = `#${pokemon.id} ${pokemon.name}`;
     document.querySelector('#pokemonImage').src = pokemon.image;
     document.querySelector('#pokemonTypes').textContent = pokemon.apiTypes.map(t => t.name).join(', ');
+    document.querySelector('#pokemonStats').textContent= `${pokemon.stats.HP} HP ${pokemon.stats.attack} Atk ${pokemon.stats.defense} Def ${pokemon.stats.special_attack} SpA ${pokemon.stats.special_defense} SpD ${pokemon.stats.speed} Spe`;
+    document.querySelector('#pokemonGen').textContent = pokemon.apiGeneration;
+    document.querySelector('#pokemonPreEvo').textContent = pokemon.apiPreEvolution;
+    document.querySelector('#pokemonEvo').textContent = pokemon.apiEvolutions.map(g => g.name).join();
+
+
+
 
     const groupedByRelation = pokemon.apiResistances.reduce((acc, res) => {
       if (!acc[res.damage_relation]) acc[res.damage_relation] = [];

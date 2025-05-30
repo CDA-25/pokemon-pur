@@ -7,7 +7,7 @@ export default class CartePokemon {
     const div = document.createElement('div');
     div.classList.add('cartePokemon');
     div.innerHTML = `
-      <div class="cardPokemon">
+      <div class="cardPokemon" id="detailPokemon">
         <img src="${this.donnees.sprite}" alt="${this.donnees.name}">
         <div class= "pokeNom">#${this.donnees.id} ${this.donnees.name}</div>
         <p>Type(s): ${this.donnees.apiTypes.map(t => t.name).join(', ')}</p>
