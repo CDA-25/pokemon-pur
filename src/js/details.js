@@ -1,30 +1,29 @@
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', async () => {
+
   const boutonRetour = document.getElementById('btnRetour');
   if (boutonRetour) {
     boutonRetour.addEventListener('click', () => {
       window.history.back(); // Retourne à la page précédente (repertoire.html)
     });
   }
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get('id');
 
-  const sectionDetail = document.getElementById('detailPokemon');
-  const pokemon = JSON.parse(localStorage.getItem('pokemonSelectionne'));
-
-  if (!pokemon) {
-    sectionDetail.innerHTML = '<p>Aucun pokémon sélectionné.</p>';
+  if (!id) {
+    console.error("Aucun ID trouvé dans l'URL");
     return;
   }
 
-  const titre = document.createElement('h2');
-  titre.textContent = pokemon.name?.fr || pokemon.name || 'Nom inconnu';
+  try {
+    const res = await fetch(`https://pokebuildapi.fr/api/v1/pokemon/${id}`);
+    const pokemon = await res.json();
 
-  const image = document.createElement('img');
-  image.src = pokemon.image;
-  image.alt = pokemon.name?.fr;
+    // Ajoute les infos au DOM :
+    document.querySelector('#pokemonName').textContent = `#${pokemon.id} ${pokemon.name}`;
+    document.querySelector('#pokemonImage').src = pokemon.image;
+    document.querySelector('#pokemonTypes').textContent = pokemon.apiTypes.map(t => t.name).join(', ');
 
-  const infos = document.createElement('p');
-  infos.textContent = `Type : ${pokemon.apiTypes?.map(t => t.name).join(', ')}`;
-
-  sectionDetail.appendChild(titre);
-  sectionDetail.appendChild(image);
-  sectionDetail.appendChild(infos);
+  } catch (error) {
+    console.error("Erreur de récupération du Pokémon :", error);
+  }
 });
