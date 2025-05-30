@@ -194,6 +194,11 @@ body {
     background-color: #f6cf57;
 }
 
+.ligneDetail {
+    display: flex;
+    align-items: center;
+    gap : 50px;
+}
 /* 
 .pokemon-list {
     display: grid;
