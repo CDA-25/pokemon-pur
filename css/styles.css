@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pixelify Sans", sans-serif;
+  background: url("/img/create-a-professional-pixel-art-background-and-scenery.gif")
+    no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.header img.titre {
+  width: 30%;
+  height: auto;
+}
+
+.header h2 {
+  font-size: 2rem;
+  text-shadow: #fff 1px -1px 16px;
+  margin-top: -40px;
+}
+
+main p {
+  font-size: 1.6rem;
+  margin: 20px auto 30px;
+  max-width: 90%;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bouton {
+  display: inline-block;
+}
+
+.pokeball {
+  width: 40vw;
+  max-width: 300px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+  filter: opacity(0.7);
+  animation: tilt-shaking 0.25s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.pokeball:hover {
+  transform: scale(1.05);
+  filter: opacity(1);
+}
+
+@keyframes tilt-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(0eg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes horizontal-shaking {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.pikachu {
+  position: absolute;
+  bottom: 10px;
+  left: -100px;
+  width: 100px;
+  animation: runAcross 10s linear infinite;
+}
+
+@keyframes runAcross {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+
+/* ------ Responsive Design ------ */
+
+@media (max-width: 768px) {
+  .header img.titre {
+    width: 50%;
+  }
+
+  .header h2 {
+    font-size: 1.5rem;
+    margin-top: -20px;
+  }
+
+  main p {
+    font-size: 1.2rem;
+  }
+
+  .pokeball {
+    width: 60vw;
+  }
+
+  .pikachu {
+    width: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header img.titre {
+    width: 70%;
+  }
+
+  .header h2 {
+    font-size: 1.3rem;
+    margin-top: -5px;
+  }
+
+  main p {
+    font-size: 1rem;
+  }
+
+  .pokeball {
+    width: 70vw;
+  }
+
+  .pikachu {
+    width: 60px;
+  }
+}
