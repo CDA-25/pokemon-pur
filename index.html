@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/carroussel.css">
     <title>Accueil - Pokissay</title>
 </head>
 <body>
@@ -22,31 +23,47 @@
     </header>
     <div class="imageText">
         <img class="bgImg" src="src/img/imageCouverture.jpg" alt="">
-        <img class="bgImg filterImage" src="src/img/imageCouverture.jpg" alt="">
         <h1 class="title">Découvrez l'univers des <br>Pokémon</h1>
         <p class="subtitle">Explorez toute la liste des Pokémon</p>
         <a class="exploreBtn" href="/pokedex.html">Explorez</a>
     </div>
-    <h2 class="secondTitle">Pokémon les Plus Populaires</h2>
-    <ul class="popularPokemons">
-    </ul>
+    <h2 class="secondTitle">Pokémon les plus populaires</h2>
+    <div class="carrousselContainer">
+        <ul class="popularPokemons">
+        </ul>
+        <div class="carousselLink">
+            <button class="carousselBtn" href=""><img class="carousselArrowRight" src="/src/icon/refresh.png" alt=""></button>
+        </div>
+    </div>
     <footer class="footer">
-        <h3 class="footerLogo">Pokissay</h3>
-        <p class="footerInfos">le site par des fans pour des fans</p>
-        <h3 class="footerTitle">Liens utiles</h3>
-        <ul>
-            <li class="footerInfos"><a href="">À propos</a></li>
-            <li class="footerInfos"><a href="">Contact</a></li>
-            <li class="footerInfos"><a href="">Mentions légales</a></li>
-        </ul>
-        <h3 class="footerTitle">Suivez-nous</h3>
-        <ul>
-            <li class="footerInfos"><a href=""><img src="src/icon/Vector.png" alt=""></a></li>
-            <li class="footerInfos"><a href=""><img src="src/icon/Snapchat.jpg" alt=""></a></li>
-            <li class="footerInfos"><a href=""><img src="src/icon/Twitter Bird.jpg" alt=""></a></li>
-            <li class="footerInfos"><a href=""><img src="src/icon/Facebook.jpg" alt=""></a></li>
-        </ul>
-        <p class="footerSubInfos">© 2025 The BTP Company. Tous droits réservés</p>
+        <div class="footerContainer">
+            <div class="footerLogos">
+                <h3 class="footerLogo">Pokissay</h3>
+                <p class="footerLogoInfo">le site par des fans,<br>pour des fans</p>
+            </div>
+            <div class="footerLinks">
+                <h3 class="footerTitle">Liens utiles</h3>
+                <ul class="footerInfosContainer">
+                    <li class="footerInfos"><a class="footerInfosText" href="">À propos</a></li>
+                    <li class="footerInfos"><a class="footerInfosText" href="">Contact</a></li>
+                    <li class="footerInfos"><a class="footerInfosText" href="">Mentions légales</a></li>
+                </ul>
+            </div>
+            <div class="footerFollow">
+                <h3 class="footerTitle">Suivez-nous</h3>
+                <ul class="footerInfosContainer">
+                    <li class="footerInfos"><a href=""><img src="src/icon/Vector.png" alt=""></a></li>
+                    <li class="footerInfos"><a href=""><img src="src/icon/Snapchat.svg" alt=""></a></li>
+                    <li class="footerInfos"><a href=""><img src="src/icon/Twitter Bird.svg" alt=""></a></li>
+                    <li class="footerInfos"><a href=""><img src="src/icon/Facebook.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerCopyright"></div>
+            <div class="footerSeparation"></div>
+            <p class="footerSubInfos">© 2025 The BTP Company. Tous droits réservés</p>
+        </div>
     </footer>
+<script src="src/popularPokemon.js"></script>
 </body>
 </html>

@@ -1,0 +1,82 @@
+:root {
+    --white: #F8F8F8;
+    --black: #090909;
+    --gray80: #919191;
+    --gray60: #C1C1C1;
+    --yellow: #FFD321;
+    --yellow-dark: #EFC000;
+    --header: #283758;
+    --footer: #111827;
+}
+
+.popularPokemons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+.popularPokemon {
+    border-radius: 16px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: rgba(0, 0, 0, 0.2) 1px solid;
+}
+
+.popularPokemon:hover {
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+    background-color: var(--yellow);
+    transition: 0.15s ease-in-out;
+}
+
+.popularPokemonName {
+    border-top: 1px solid var(--black);
+    padding-top: 10px;
+    color: var(--footer);
+    font-family: "Jersey 25", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.popularPokemon {
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+    margin-right: 1vw;
+}
+
+.popularPokemonImg {
+    width: 175px;
+}
+
+.carousselArrowRight {
+    width: 150px;
+    margin-bottom: -10px;
+}
+
+.carousselLink {
+    padding-right: 20%;
+}
+
+.carousselBtn {
+    background-color: #ffffff;
+    font-weight: 200;
+    border-radius: 16px;
+    border: rgba(0, 0, 0, 0.2) 1px solid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    margin-left: 100px;
+}
+
+.carousselBtn:hover {
+    background-color: var(--yellow);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+    transition: 0.15s ease-in-out;
+}
