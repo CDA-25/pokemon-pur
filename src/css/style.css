@@ -286,15 +286,55 @@ body {
 }
 
 
-.lignPokemon {
+.cardPokemon {
     cursor: pointer;
-    border: solid 1px white;
+    border: solid 5px #3A5EAA;
+    background-image: url(/Photo/pokeball.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fffffc;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    position: relative;
+    overflow: hidden;
 }
+
+.pokeNom {
+    font-size: 1.5em;
+}
+
+.cardPokemon::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.808);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.cardPokemon > * {
+    position: relative;
+    z-index: 2;
+}
+
+.cardPokemon:hover {
+    background-color: #E8B804;
+    border: solid 5px #ffed4d;
+}
+
 
 .headerOther {
     display: flex;
     justify-content: space-between;
+}
+
+.contenuCartes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap : 15px;
+
 }
