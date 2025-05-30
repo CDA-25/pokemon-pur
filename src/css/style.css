@@ -199,6 +199,11 @@ body {
     align-items: center;
     gap : 50px;
 }
+
+#pokemonRes {
+    display: flex;
+    gap : 150px;
+}
 /* 
 .pokemon-list {
     display: grid;
