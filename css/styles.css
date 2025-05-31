@@ -57,10 +57,8 @@ main p {
   max-width: 300px;
   height: auto;
   cursor: pointer;
-  transition: transform 0.2s;
   filter: opacity(0.7);
-  animation: tilt-shaking 0.25s infinite;
-  animation-timing-function: ease-in-out;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .pokeball:hover {
@@ -68,39 +66,38 @@ main p {
   filter: opacity(1);
 }
 
-@keyframes tilt-shaking {
-  0% {
+.pokeball-inner {
+  width: 100%;
+  height: auto;
+  animation: periodic-shake 2s infinite;
+  transform-origin: center center;
+}
+
+@keyframes periodic-shake {
+  0%,
+  10% {
     transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(2deg);
+  }
+  20% {
+    transform: rotate(-2deg);
   }
   25% {
     transform: rotate(2deg);
   }
-  50% {
-    transform: rotate(0eg);
-  }
-  75% {
+  30% {
     transform: rotate(-2deg);
+  }
+  35% {
+    transform: rotate(1deg);
+  }
+  40% {
+    transform: rotate(0deg);
   }
   100% {
     transform: rotate(0deg);
-  }
-}
-
-@keyframes horizontal-shaking {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(5px);
-  }
-  50% {
-    transform: translateX(-5px);
-  }
-  75% {
-    transform: translateX(5px);
-  }
-  100% {
-    transform: translateX(0);
   }
 }
 
