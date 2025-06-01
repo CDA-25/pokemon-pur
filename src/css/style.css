@@ -51,18 +51,12 @@ body {
 .containerSearch {
     display: flex;
     justify-content: center;
-    gap: 32%;
+    gap: 10%;
     width: 30%;
     height: 60px;
     border-radius: 15px;
     background-color: #f6cf57;
     border: solid 2px #3A5EAA;
-}
-
-.pokeball {
-    margin-top: 20px;
-    width: 50px;
-    height: 50px;
 }
 
 .search {
@@ -87,6 +81,16 @@ body {
     padding-top: 30px;
 }
 
+footer a {
+    list-style: none;
+    text-decoration: none;
+    color: #ffed4d;
+}
+.pokeball {
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+}
 .imgAccueil {
     display: flex;
     justify-content: center;
@@ -203,6 +207,44 @@ body {
 #pokemonRes {
     display: flex;
     gap : 150px;
+}
+
+.bodyDetail {
+    border: solid 5px #3A5EAA;
+    border-radius: 15px;
+    width: 80%;
+    margin: 5% auto 5% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgCarapuce {
+    width: 10%;
+}
+
+.teamContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 0 auto;
+    max-width: 1500px;
+    margin-bottom: 5%;
+}
+
+.persoContainer {
+    width: 50%;
+    border: solid 5px #0847db;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.persoContainer img {
+    max-width: 100%;
+    border-radius: 12px;
 }
 /* 
 .pokemon-list {
