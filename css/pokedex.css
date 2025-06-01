@@ -210,3 +210,182 @@ body {
     height: 60px;
   }
 }
+
+
+/* Nouveau css relatif à la liste des pokémons */
+
+/* Container utilisé uniquement pour afficher la liste des pokémons */
+
+#pokeList {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  margin-bottom: 1rem;
+
+}
+
+/* Card Base (sans détail) */
+
+
+#pokemonDisplay {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 30%;
+    height: 15rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+#headerContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+#pokemonDisplayIdentity {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem;
+    background-color: rgb(204, 231, 231);
+    border-radius: 10px;
+    width: 12rem;
+    margin: 0 auto;
+    margin-top: 0.15rem;
+}
+
+#pokemonDisplayIdentity:hover {
+    background-color: rgb(172, 231, 192);
+    
+}
+
+#pokemonDisplayIdentity > a {
+    text-decoration: none;
+    color: black;
+}
+
+#pokemonDisplayIdentity > a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+#pokemonDisplayName {
+    margin-right: 0.25rem;
+}
+
+#pokemonDisplayId {
+    margin: 5px;
+}
+
+#pokemonDisplayImage {
+    display: flex;
+    justify-content: center;
+}
+
+#pokemonImage > img {
+    width: 10rem;
+}
+
+
+
+/* détail du pokémon */
+
+
+
+
+#pokemonDisplayDetail {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+#headerContainerDetail {
+    display: flex;
+    justify-content: space-around;
+}
+
+#pokemonDisplayIdentityDetail {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem;
+    background-color: rgb(204, 231, 231);
+    border-radius: 10px;
+    width: 30rem;
+    margin: 0 auto;
+    margin-top: 0.15rem;
+}
+
+#pokemonDisplayIdentityDetail:hover {
+    background-color: rgb(172, 231, 192);  
+}
+
+#pokemonDisplayNameDetail {
+    margin-right: 0.25rem;
+}
+
+#pokemonDisplayIdDetail {
+    margin: 5px;
+}
+
+#pokemonDisplayImageDetail {
+    display: flex;
+    justify-content: center;
+}
+
+#pokemonImageDetail > img {
+    width: 40rem;
+}
+
+#typeContainerDetail {
+    display: flex;
+    justify-content: center;
+}
+
+#typeContainerDetail > img {
+    width: 2.5rem;
+}
+
+#allTypesDetail {
+    display: flex;
+    flex-direction:row;
+}
+
+
+#pokemonInfoEvolutionDetail {
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+#statsContainerDetail {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+
+#titleDetail{
+  display: flex;
+  justify-content: center;
+}
