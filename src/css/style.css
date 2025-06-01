@@ -69,20 +69,17 @@ body {
 
 .footer {
     margin-top: auto;
-    padding-top: 20px;
+    padding: 0 0 30px 0; 
     display: flex;
     justify-content: center;
     gap: 50px;
     list-style: none;
     font-size: medium;
-    padding: 0;
     color: #f6cf57;
     border-top: 1px solid #3A5EAA;
-    padding-top: 30px;
 }
 
 footer a {
-    list-style: none;
     text-decoration: none;
     color: #ffed4d;
 }
@@ -170,12 +167,6 @@ footer a {
     border: solid 5px #ffed4d;
 }
 
-
-.headerOther {
-    display: flex;
-    justify-content: space-between;
-}
-
 .contenuCartes {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -202,11 +193,26 @@ footer a {
     display: flex;
     align-items: center;
     gap : 50px;
+    box-shadow: 0 1px 3px rgba(255, 248, 248, 0.1);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
 }
 
 #pokemonRes {
     display: flex;
-    gap : 150px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    max-width: 900px;
+    align-items: flex-start;
+}
+
+#pokemonRes > div {
+    flex: 1 1 calc(33.33% - 30px);
+    border-radius: 8px;
+    padding: 10px;
 }
 
 .bodyDetail {
@@ -219,6 +225,14 @@ footer a {
     align-items: center;
 }
 
+.titleDetail {
+    font-family: "Pokemon Solid" ;
+    letter-spacing: 5px;
+    color: #3A5EAA;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
 .imgCarapuce {
     width: 10%;
 }
@@ -228,9 +242,8 @@ footer a {
     justify-content: center;
     align-items: flex-start;
     gap: 40px;
-    margin: 0 auto;
+    margin: 0 auto 5% auto;
     max-width: 1500px;
-    margin-bottom: 5%;
 }
 
 .persoContainer {
