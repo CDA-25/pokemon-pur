@@ -1,42 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pokédex</title>
-    <link rel="stylesheet" href="css/pokedex.css" />
-    <script src="script.js"></script>
-    <link rel="shortcut icon" href="img/pokeball.svg" />
-  </head>
-  <body>
-    <header>
-      <nav class="nav">
-        <ul class="nav-ul">
-          <img class="pikachu"src="img/pikachu-running.gif" alt="Pikachu qui court"/>
-          <li><a href="index.html"><img class="poketintouin" src="img/Poketintoin.png" alt="logo"></li></a>
-          <li class="li"><a href="index.html" class="nav-item">Home</a></li>
-          <li class="li"><a href="liste.html" class="nav-item">Pokédex</a></li>
-        </ul>
-      </nav>
-    </header>
-    <img class="john_goat" src="img/professeur_john-removebg-preview.png" alt="Proffesseur John">
-    <div class="page-container">
-      <h2 class="titre">Voici la liste de tout le tintouin !</h2>
-      <p>Sélectionner un Pokémon pour voir ses caractéristiques</p>
-    </div>
-    <input class="search" type="search" placeholder="rechercher un pokémon">
-    <div class="container">
-      <ul class="liste">   
-        <li class="pokemon" id="1">Bulbizarre</li>
-        <li class="pokemon" id="2">Herbizarre</li>
-        <li class="pokemon" id="3">Florizarre</li>
-        <li class="pokemon" id="4">Salamèche</li>
-        <li class="pokemon" id="5">Reptincel</li>
-        <li class="pokemon" id="6">Dracaufeu</li>
-        <li class="pokemon" id="7">Carapuce</li>
-        <li class="pokemon" id="8">Carabaffe</li>
-        <li class="pokemon" id="9">Tortank</li>
-        <li class="pokemon" id="10">Chenipan</li>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokédex</title>
+  <link rel="stylesheet" href="css/pokedex.css" />
+  <script src="script.js"></script>
+  <link rel="shortcut icon" href="img/pokeball.svg" />
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <ul class="nav-ul">
+        <li><a href="index.html"><img class="poketintouin" src="img/Poketintoin.png" alt="logo"></li></a>
+        <li class="li"><a href="index.html" class="nav-item">Home</a></li>
+        <li class="li"><a href="liste.html" class="nav-item">Pokédex</a></li>
+        <img class="pikachu" src="img/pikachu-running.gif" alt="Pikachu qui court" />
       </ul>
-  </body>
+    </nav>
+  </header>
+  <img class="john_goat" id="john" src="img/professeur_john-removebg-preview.png" alt="Proffesseur John">
+  <div class="bulle-dialogue">
+    <div id="texte-bulle" class="bulle"></div>
+  </div>
+  <div class="page-container">
+    <h2 class="titre">Cliquez sur le professeur John si vous avez besoin d'un guide.</h2>
+    <p>(Pas trop quand même, il n'aime pas qu'on le fasse chier..)</p>
+  </div>
+  <input class="search" type="search" placeholder="rechercher un pokémon">
+  <div class="container">
+    <ul class="liste">
+      <li class="pokemon" id="1"><a href="detail.html">Bulbizarre</a></li>
+      <li class="pokemon" id="2">Herbizarre</li>
+      <li class="pokemon" id="3">Florizarre</li>
+      <li class="pokemon" id="4">Salamèche</li>
+      <li class="pokemon" id="5">Reptincel</li>
+      <li class="pokemon" id="6">Dracaufeu</li>
+      <li class="pokemon" id="7">Carapuce</li>
+      <li class="pokemon" id="8">Carabaffe</li>
+      <li class="pokemon" id="9">Tortank</li>
+      <li class="pokemon" id="10">Chenipan</li>
+    </ul>
+</body>
+
 </html>

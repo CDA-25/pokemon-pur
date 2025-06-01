@@ -10,11 +10,13 @@ body {
   background: url("/img/create-a-professional-pixel-art-background-and-scenery.gif")
     no-repeat center center fixed;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 .nav {
-  background-color: #0072be;
+  background-color: #003b88;
   padding: 5px;
+  position: fixed;
 }
 
 .nav-ul {
@@ -30,8 +32,9 @@ body {
   position: relative;
   right: 5px;
   width: 15%;
-  background-color: #0072be;
-  margin-right: 2px;
+  background-color: #003b88;
+  margin-right: 20px;
+  z-index: 1000;
 }
 
 .li {
@@ -45,8 +48,10 @@ body {
   font-weight: bold;
   font-family: sans-serif;
   display: flex;
-  background-color: #0072be;
-  padding: 30px 30px;
+  background-color: #003b88;
+  padding: 30px 29px;
+  position: relative;
+  z-index: 1000;
 }
 
 .pikachu {
@@ -54,6 +59,7 @@ body {
   position: absolute;
   left: 35%;
   animation: runAcross 8s linear infinite;
+  z-index: 1;
 }
 
 @keyframes runAcross {
@@ -61,7 +67,7 @@ body {
     left: -100px;
   }
   100% {
-    left: 94vw;
+    left: 98vw;
   }
 }
 
@@ -78,30 +84,89 @@ body {
 .john_goat {
   width: 10%;
   height: auto;
-  position: absolute;
   top: 68%;
   left: 90%;
   position: fixed;
-  animation: vertical-shaking 2s infinite;
+  animation: breathing 4s ease-in-out infinite;
+  transform-origin: bottom;
 }
 
-@keyframes vertical-shaking {
+@keyframes breathing {
   0% {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(1.5px);
+    transform: scale(1);
   }
   50% {
-    transform: translateY(-1.5px);
-  }
-  75% {
-    transform: translateY(1.5px);
+    transform: scale(1.026);
   }
   100% {
-    transform: translateY(0);
+    transform: scale(1);
   }
 }
+
+@keyframes fuite {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(200%) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+.fuite {
+  animation: fuite 2s forwards;
+}
+
+.bulle-dialogue {
+  position: fixed;
+  bottom: 350px;
+  right: 200px;
+  max-width: 300px;
+  background: white;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 1.2rem;
+  box-shadow: 3px 3px 2px black;
+}
+
+@media (max-width: 1920px) {
+  .bulle-dialogue {
+    bottom: 300px;
+    right: 150px;
+    font-size: 1.5rem;
+  }
+}
+
+/* ---------------------------------------------------- */
+
+/* Ajout du triangle de la bulle façon BD */
+
+.bulle-dialogue::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: 15px;
+  border-width: 11px 11px 0 11px;
+  border-style: solid;
+  border-color: white transparent;
+  display: block;
+}
+
+.bulle-dialogue::before {
+  content: "";
+  position: absolute;
+  bottom: -23px;
+  right: 12px;
+  border-width: 12px 12px 0 12px;
+  border-style: solid;
+  border-color: black transparent;
+  display: block;
+}
+
+/* ---------------------------------------------------- */
 
 .page-container {
   font-size: 2rem;
@@ -109,6 +174,7 @@ body {
   flex-direction: column;
   text-align: center;
   font-family: "Pixelify Sans", sans-serif;
+  padding-top: 200px;
 }
 
 .liste {
@@ -137,4 +203,10 @@ body {
   justify-content: center;
   font-family: "Pixelify Sans", sans-serif;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    height: 60px;
+  }
 }

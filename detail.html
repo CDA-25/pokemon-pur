@@ -3,7 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Détail</title>
+    <link rel="stylesheet" href="css/detail.css" />
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="img/pokeball.svg" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="nav">
+        <ul class="nav-ul">
+          <li><a href="index.html"><img class="poketintouin" src="img/Poketintoin.png" alt="logo"></li></a>
+          <li class="li"><a href="index.html" class="nav-item">Home</a></li>
+          <li class="li"><a href="liste.html" class="nav-item">Pokédex</a></li>
+          <img class="pikachu" src="img/pikachu-running.gif" alt="Pikachu qui court" />
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="filtre"></div>
+      <div class="filtre2"></div>
+      <div class="container">
+        <img class="pokedex" src="img/pokedex-color.svg" alt="pokédex">
+        <div class="pokemon-detail">
+          <h1 id="pokemon-name">John</h1>
+          <img id="pokemon-image" src="img/professeur_john-removebg-preview.png" alt="Image du Pokémon" />
+          <p id="pokemon-description">Description du Pokémon</p>
+          <ul id="pokemon-types"></ul>
+          <ul id="pokemon-abilities"></ul>
+        </div>
+      </div>
+      <button id="back-button"><a class="back-button" href="liste.html">Retour</a></button>
+    </main>
+    <footer></footer>
+  </body>
 </html>

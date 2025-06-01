@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("/img/create-a-professional-pixel-art-background-and-scenery.gif")
+    no-repeat center center fixed;
+  background-size: cover;
+  overflow-y: hidden;
+}
+
+.nav {
+  background-color: #003b88;
+  padding: 5px;
+  position: fixed;
+}
+
+.nav-ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.poketintouin {
+  position: relative;
+  right: 5px;
+  width: 15%;
+  background-color: #003b88;
+  margin-right: 20px;
+  z-index: 1000;
+}
+
+.li {
+  position: relative;
+  right: 70.2%;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: rgb(255, 217, 0);
+  font-weight: bold;
+  font-family: sans-serif;
+  display: flex;
+  background-color: #003b88;
+  padding: 30px 29px;
+  position: relative;
+  z-index: 1000;
+}
+
+.pikachu {
+  width: 5%;
+  position: absolute;
+  left: 35%;
+  animation: runAcross 8s linear infinite;
+  z-index: 1;
+}
+
+@keyframes runAcross {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 98vw;
+  }
+}
+
+.filtre {
+  position: absolute;
+  top: 325px;
+  left: 93px;
+  background-color: #a7a7a7;
+  width: 290px;
+  height: 288px;
+  z-index: 1000;
+}
+
+.filtre2 {
+  position: absolute;
+  top: 325px;
+  left: 93px;
+  background-color: #00a1eb7a;
+  width: 290px;
+  height: 288px;
+  z-index: 2000;
+}
+
+.pokedex {
+  position: relative;
+  top: 120px;
+  right: 300px;
+  width: 55%;
+}
+
+#pokemon-name {
+  position: relative;
+  right: 755px;
+  bottom: 48px;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Pixelify Sans", sans-serif;
+  color: #034e00;
+}
+
+#pokemon-image {
+  position: relative;
+  bottom: 530px;
+  right: 720px;
+  width: 9%;
+  margin: 0 auto;
+  display: block;
+  z-index: 1000;
+}
+
+#pokemon-description {
+  bottom: 500px;
+  left: 25%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  position: fixed;
+  width: 50%;
+  overflow-wrap: break-word;
+  white-space: normal;
+  max-height: 500px;
+}
+
+#back-button {
+  position: absolute;
+  top: 870px;
+  left: 25px;
+  background-color: #0072be;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.back-button {
+  text-decoration: none;
+  color: rgb(255, 217, 0);
+}
