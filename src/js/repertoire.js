@@ -21,9 +21,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   barreRecherche.addEventListener('input', () => {
     const valeur = barreRecherche.value.toLowerCase();
     const filtres = tousLesPokemons.filter(p => 
-      p.name.fr.toLowerCase().includes(valeur) ||
-      p.id.toString().includes(valeur) ||
-      p.apiTypes.some(t => t.name.toLowerCase().includes(valeur))
+      p.name.toLowerCase().startsWith(valeur) || 
+      p.id.toString().startsWith(valeur) ||          
+      p.apiTypes.some(t => t.name.toLowerCase().startsWith(valeur)) 
     );
     afficherPokemons(filtres);
   });
