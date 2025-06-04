@@ -1,246 +1,247 @@
 @font-face {
-    font-family: "Pokemon Solid";
-    src: url("/font/Pokemon Solid.ttf");
+  font-family: "Pokemon Solid";
+  src: url("/font/Pokemon Solid.ttf");
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: antiquewhite;
-    margin: 0 30px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  background-color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: antiquewhite;
+  margin: 0 30px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
-    color: #E8B804;
-    text-shadow: -4px -4px 0 #3A5EAA, 4px -4px 0 #3A5EAA, -4px 4px 0 #3A5EAA, 4px 4px 0 #3A5EAA;
-    text-align: center;
-    font-family: "Pokemon Solid";
-    letter-spacing: 6px;
-    font-size: 5rem;
-    margin-top: 2rem;
+  color: #e8b804;
+  text-shadow: -4px -4px 0 #3a5eaa, 4px -4px 0 #3a5eaa, -4px 4px 0 #3a5eaa,
+    4px 4px 0 #3a5eaa;
+  text-align: center;
+  font-family: "Pokemon Solid";
+  letter-spacing: 6px;
+  font-size: 5rem;
+  margin-top: 2rem;
 }
 
 .lowTitle {
-    color: #E8B804;
-    text-shadow: -2px -2px 0 #3A5EAA, -2px -2px 0 #3A5EAA, -2px 2px 0 #3A5EAA, 2px 2px 0 #3A5EAA;
-    text-align: center;
-    font-size: 3rem;
-    margin-bottom: 2rem;
+  color: #e8b804;
+  text-shadow: -2px -2px 0 #3a5eaa, -2px -2px 0 #3a5eaa, -2px 2px 0 #3a5eaa,
+    2px 2px 0 #3a5eaa;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
 .headerAccueil {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 .headerOther {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
 }
 
-
-
 .footer {
-    margin-top: auto;
-    padding: 20px 0 30px 0; 
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    list-style: none;
-    font-size: medium;
-    color: #f6cf57;
-    border-top: 1px solid #3A5EAA;
+  margin-top: auto;
+  padding: 20px 0 30px 0;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  list-style: none;
+  font-size: medium;
+  color: #f6cf57;
+  border-top: 1px solid #3a5eaa;
 }
 
 footer a {
-    text-decoration: none;
-    color: #ffed4d;
+  text-decoration: none;
+  color: #ffed4d;
 }
 .pokeball {
-    margin-top: 20px;
-    width: 50px;
-    height: 50px;
+  margin-top: 20px;
+  width: 50px;
+  height: 50px;
 }
 .imgAccueil {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 90%;
-    margin: 0 auto 3rem auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 90%;
+  margin: 0 auto 3rem auto;
 }
 
 .imgAccueil img {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
 }
 
 .btn {
-    background-color: #ffed4d;
-    border: solid 2px #3A5EAA;
-    border-radius: 10px;
-    width: 300px;
-    height: 40px;
-    font-family: "Pokemon Solid";
-    letter-spacing: 2px;
-    font-size: medium;
-    color: black;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-align: center;
+  background-color: #ffed4d;
+  border: solid 2px #3a5eaa;
+  border-radius: 10px;
+  width: 300px;
+  height: 40px;
+  font-family: "Pokemon Solid";
+  letter-spacing: 2px;
+  font-size: medium;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
 }
 
 .btn:hover {
-    background-color: #f6cf57;
+  background-color: #f6cf57;
 }
 
 .btnRepertoire {
-    position: absolute;
-    top: 20%;
-    left: 40%;
+  position: absolute;
+  top: 20%;
+  left: 40%;
 }
 
 .cardPokemon {
-    cursor: pointer;
-    border: solid 5px #3A5EAA;
-    background-image: url(/Photo/pokeball.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fffffc;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;    position: relative;
-    overflow: hidden;
+  cursor: pointer;
+  border: solid 5px #3a5eaa;
+  background-image: url(/Photo/pokeball.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fffffc;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .pokeNom {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .cardPokemon::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.808);
-    z-index: 1;
-    pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.808);
+  z-index: 1;
+  pointer-events: none;
 }
 
 .cardPokemon > * {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 .cardPokemon:hover {
-    background-color: #E8B804;
-    border: solid 5px #ffed4d;
+  background-color: #e8b804;
+  border: solid 5px #ffed4d;
 }
 
 .contenuCartes {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap : 15px;
-
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
 }
 
 #btnRetour {
-    font-family: "Pokemon Solid";
-    background-color: #ffed4d;
-    border: 2px solid #3A5EAA;
-    border-radius: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-    color: black;
-    transition: background-color 0.3s ease;
+  font-family: "Pokemon Solid";
+  background-color: #ffed4d;
+  border: 2px solid #3a5eaa;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: black;
+  transition: background-color 0.3s ease;
 }
 
 #btnRetour:hover {
-    background-color: #f6cf57;
+  background-color: #f6cf57;
 }
 
 .ligneDetail {
-    display: flex;
-    align-items: center;
-    gap : 50px;
-    box-shadow: 0 1px 3px rgba(255, 248, 248, 0.1);
-    border-radius: 5px;
-    margin-bottom: 15px;
-    padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  box-shadow: 0 1px 3px rgba(255, 248, 248, 0.1);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 10px;
 }
 
 #pokemonRes {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
-    width: 100%;
-    max-width: 900px;
-    align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  max-width: 900px;
+  align-items: flex-start;
 }
 
 #pokemonRes > div {
-    flex: 1 1 calc(33.33% - 30px);
-    border-radius: 8px;
-    padding: 10px;
+  flex: 1 1 calc(33.33% - 30px);
+  border-radius: 8px;
+  padding: 10px;
 }
 
 .bodyDetail {
-    border: solid 5px #3A5EAA;
-    border-radius: 15px;
-    width: 80%;
-    margin: 5% auto 5% 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  border: solid 5px #3a5eaa;
+  border-radius: 15px;
+  width: 80%;
+  margin: 5% auto 5% 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .titleDetail {
-    font-family: "Pokemon Solid" ;
-    letter-spacing: 5px;
-    color: #3A5EAA;
-    font-size: 1.5em;
-    font-weight: 500;
+  font-family: "Pokemon Solid";
+  letter-spacing: 5px;
+  color: #3a5eaa;
+  font-size: 1.5em;
+  font-weight: 500;
 }
 
 .imgCarapuce {
-    width: 10%;
+  width: 10%;
 }
 
 .teamContainer {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-    margin: 0 auto 5% auto;
-    max-width: 1500px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 0 auto 5% auto;
+  max-width: 1500px;
 }
 
 .persoContainer {
-    width: 50%;
-    border: solid 5px #0847db;
-    padding: 20px;
-    border-radius: 16px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  width: 50%;
+  border: solid 5px #0847db;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .persoContainer img {
-    max-width: 100%;
-    border-radius: 12px;
+  max-width: 100%;
+  border-radius: 12px;
 }
 /* 
 .pokemon-list {
@@ -349,7 +350,7 @@ footer a {
   padding: 8px 10px;
   background-color: #f6cf57;
   border-radius: 10px;
-  border: solid 2px #3A5EAA;
+  border: solid 2px #3a5eaa;
   flex: 1;
   min-width: 120px;
   color: #0847db;
@@ -368,59 +369,24 @@ footer a {
   height: 32px;
 }
 
-/*.containerSearch {
-    display: flex;
-    justify-content: center;
-    gap: 10%;
-    width: 30%;
-    height: 60px;
-    border-radius: 15px;
-    background-color: #f6cf57;
-    border: solid 2px #3A5EAA;
-}
-
-.search {
-    background: none;
-    border: none;
-    outline: none;
-    color: #0847db;
-    font-size: 1.5em;
-}
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Responsive */
 
 @media (max-width: 768px) {
+  .btnRepertoire {
+    position: static;
+    margin: 1rem auto 0 auto;
+    display: block;
+    width: 80%;
+  }
 
-    .btnRepertoire {
-        position: static;
-        margin: 1rem auto 0 auto;
-        display: block;
-        width: 80%;
-    }
-    
-    .contenuCartes {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-
+  .contenuCartes {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }
 
 @media (max-width: 480px) {
-    body {
-        margin: 0 10px;
-    }
+  body {
+    margin: 0 10px;
+  }
 }
