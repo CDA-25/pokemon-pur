@@ -15,8 +15,25 @@ window.addEventListener('load', async () => {
     image.src = pokemon.image;
     image.alt = `Image de ${pokemon.name}`;
 
-    document.querySelector('#pokemonTypes').textContent = pokemon.apiTypes.map(t => t.name).join(', ');
-    document.querySelector('#pokemonStats').textContent = 
+const typesContainer = document.querySelector('#pokemonTypes');
+typesContainer.innerHTML = ''; // Vider avant d’ajouter
+
+pokemon.apiTypes.forEach(type => {
+  const typeDiv = document.createElement('div');
+  typeDiv.classList.add('type-block');
+
+  const img = document.createElement('img');
+  img.src = type.image;
+  img.alt = type.name;
+  img.classList.add('type-icon');
+
+  const label = document.createElement('span');
+  label.textContent = type.name;
+
+  typeDiv.appendChild(img);
+  typeDiv.appendChild(label);
+  typesContainer.appendChild(typeDiv);
+});    document.querySelector('#pokemonStats').textContent = 
       `${pokemon.stats.HP} HP | ${pokemon.stats.attack} Atk | ${pokemon.stats.defense} Def | ` +
       `${pokemon.stats.special_attack} SpA | ${pokemon.stats.special_defense} SpD | ${pokemon.stats.speed} Spe`;
 
