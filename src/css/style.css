@@ -356,6 +356,21 @@ footer a {
     padding: 5px 0;
 } */
 
+.containerSearch {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.containerSearch input {
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  flex: 1;
+  min-width: 120px;
+}
+
+
 
 
 /* Responsive */

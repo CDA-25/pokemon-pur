@@ -12,10 +12,12 @@
     <div class="imgPokedex">
       <img src="./Photo/Pokédex_logo.png" alt="Logo Pokedex">
     </div>
-    <div class = "containerSearch">
-    <input type="text" class="search recherche" placeholder="Rechercher par nom, numéro ou type" />
-      <img class="btnSearch" src="./Photo/search.svg">
-      </div>
+    <div class="containerSearch">
+  <input type="text" id="searchNom" placeholder="Nom" />
+  <input type="text" id="searchType" placeholder="Type" />
+  <input type="number" id="searchId" placeholder="Numéro" min="1" />
+  <input type="number" id="searchGen" placeholder="Gén" min="1" max="9" />
+</div>
   </header>
   <main>
     <section class="contenuCartes"></section>
