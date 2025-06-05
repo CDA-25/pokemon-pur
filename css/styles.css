@@ -18,6 +18,7 @@ body {
   min-height: 100vh;
   padding: 20px;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .header {
@@ -111,6 +112,33 @@ main p {
   100% {
     left: -40vw;
     transform: scaleX(-1);
+  }
+}
+
+.john-chasing {
+  position: absolute;
+  top: 820px;
+  animation: chasing 15s linear infinite;
+}
+
+@keyframes chasing {
+  0% {
+    right: -100vw;
+    transform: scaleX(-1);
+  }
+  50% {
+    right:-20vw;
+    transform: scaleX(-1);
+  }
+  100% {
+    right: 110vw;
+    transform: scaleX(-1);
+  }
+}
+
+@media (max-width: 1920px) {
+  .john-chasing {
+    top: 785px;
   }
 }
 

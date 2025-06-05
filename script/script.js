@@ -207,17 +207,16 @@ function cardDetail(pokemon) {
                     })
 
         //div qui contient l'image
-        let imageContainer = document.createElement("div")
-        imageContainer.id = "pokemonDisplayImageDetail"
-        mainContainer.appendChild(imageContainer)
+        let imageContainer = document.querySelector(".filtre")
+      
 
           // image
-            let imageContent = document.createElement("div")
-            imageContent.id = "pokemonImageDetail"
-            let image = document.createElement("img")
-            image.src = String(pokemon.image)
-            imageContent.appendChild(image)
-            imageContainer.appendChild(imageContent)
+          let imageContent = document.createElement("div")
+          imageContent.id = "pokemonImageDetail"
+          let image = document.createElement("img")
+          image.src = String(pokemon.image)
+          imageContent.appendChild(image)
+          imageContainer.appendChild(imageContent)
         
         let statsContainer = document.createElement("div")
         statsContainer.id = "statsContainerDetail"

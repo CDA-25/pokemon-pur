@@ -44,7 +44,7 @@ function main() {
       if (i < texte.length) {
         cible.textContent += texte.charAt(i);
         i++;
-        setTimeout(ecrireLettre, 1);
+        setTimeout(ecrireLettre, 35);
       } else {
         isTyping = false;
         if (callback) callback();

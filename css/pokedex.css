@@ -223,6 +223,10 @@ body {
     right: 150px; 
     max-width: 250px;
   }
+  .page-container {
+    width: 69.2%;
+    background-size: 15%;
+  }
 }
 
 @media (max-width: 1600px) {

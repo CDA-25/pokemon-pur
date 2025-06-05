@@ -108,9 +108,14 @@ body {
     width: 35%;
     margin: 0 auto;
     top: 150px;
+    font-family: sans-serif;
     display: flex;
     flex-direction: column;
-    position: relative;
+    justify-content: center;
+    position: absolute;
+    left: 35%;
+    top: 30%;
+    
 }
 
 #headerContainerDetail {
@@ -137,6 +142,15 @@ body {
 
 #pokemonDisplayNameDetail {
     margin-right: 0.25rem;
+    position: absolute;
+    right: 975px;
+    top: 490px;
+    font-size: 1.2rem;
+    font-family: "Pixelify Sans", sans-serif;
+    color: rgb(0, 59, 0);
+    
+
+
 }
 
 #pokemonDisplayIdDetail {
@@ -148,8 +162,19 @@ body {
     justify-content: center;
 }
 
+.filtre {
+  height: 287px;
+  width: 285px;
+  background-color: aqua;
+  opacity: 40%;
+  position: absolute;
+  top: 327px;
+  left: 202px;
+  z-index: 1000;
+}
+
 #pokemonImageDetail > img {
-    width: 2rem;
+    width: 15rem;
 }
 
 #typeContainerDetail {
