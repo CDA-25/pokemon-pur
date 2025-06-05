@@ -62,10 +62,9 @@ Cette application web a été construite en HTML, CSS et JavaScript vanilla (san
 
 ### Page d'accueil
 
-La page d'accueil (`index.html`) présente une interface minimaliste avec une animation de Pokeball qui tourne. Elle sert de point d'entrée vers les autres fonctionnalités de l'application.
+La page d'accueil (`index.html`) présente une interface minimaliste avec un gif animé. Elle sert de point d'entrée vers les autres fonctionnalités de l'application.
 
 **Caractéristiques :**
-- Animation CSS d'une Pokeball en rotation
 - Navigation vers les autres sections de l'application
 - Design épuré et accueillant
 
