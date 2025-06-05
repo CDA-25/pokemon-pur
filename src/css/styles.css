@@ -1,0 +1,65 @@
+body {
+    background-image: url("../../img/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:100vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nomSite {
+    font-size : 2rem;
+}
+
+.navbar {
+    border : 1px solid black;
+    border-radius: 10px;
+    background-color : #E3981F;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer { 
+   position: fixed;
+   bottom: 0;
+   background-color: black;
+   color: white;
+   width: 100%;
+   margin-left: -10px;
+   padding-left: 10px;
+}
+
+.fpicture {
+    width: 100px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.parmigiano {
+    width: 250px;
+}
+
+.menu_btn {
+    margin : 20px auto 0 auto;
+}
+
+.titre {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.citation {
+    display: flex;
+    justify-content: center;
+    border: solid black;
+    font-style: italic;
+    padding: 1rem;
+    box-shadow: 10px 5px 5px black;
+}

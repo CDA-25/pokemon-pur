@@ -1,0 +1,65 @@
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-height: 80vh;
+    overflow-y: scroll;
+    padding: 16px;
+}
+
+.card {
+    width: 250px;
+    border-radius: 16px;
+    border: 4px solid #e2b714;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    background-color: var(--bg-color);
+    padding: 40px;
+    position: relative;
+    font-family: 'Verdana', sans-serif;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.cardImg {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.pkmnName {
+    position: absolute;
+    top: 0px;
+    left: 12px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.pkmnTypes {
+    position: absolute;
+    top: 11px;
+    right: 12px;
+    display: flex;
+    gap: 4px;
+}
+
+.typesImg {
+    width: 32px;
+    height: 32px;
+}
+
+.searchBar {
+    display: block;
+    margin: 24px auto 12px;
+    padding: 10px 14px;
+    font-size: 1rem;
+    width: 80%;
+    max-width: 50vw;
+    border-radius: 8px;
+    border: 4px solid #e2b714;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
