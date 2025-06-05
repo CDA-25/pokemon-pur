@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- <link rel="stylesheet" href="./src/output.css" /> -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
+  <script type="module" src="script2.js"></script>
+  <title>Pokemon</title>
+</head>
+
+<body class="bg-sky-300 pl-5 pr-5">
+  <header class="border-b-4 border-amber-300">
+    <div class="logoheader flex justify-between items-center">
+      <div>
+        <img class="h-32" src="./images/pokemonlogo.png" alt="logo pokemon" />
+      </div>
+      <p class="text-5xl font-extrabold text-center mt-8 text-amber-300 text-outline-blue" style="font-family: 'Orbitron', sans-serif;">Pokedex</p>
+      <div>
+        <a class="items-center" href="index.html">Accueil</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="text-center mt-5 mb-10 text-5xl">Voici la liste des Pokemons</h1>
+   
+    <!-- <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"> -->
+    <div id="pokemons_container" class="flex flex-wrap justify-center p-4"></div>
+  
+    </div>
+
+  </main>
+  <footer>
+    <div class="flex mt-100 items-center justify-between">
+      <div class="flex items-center gap-x-12">
+        <div class="size-16"><img src="./images/pokemon-icon.svg" alt="Logo Prokémon" /></div>
+        <span>Copyright &copy; PokéOR. Tous droits réservés.</span>
+      </div>
+
+      <div>
+        <ul class="flex gap-x-12">
+          <li class="text-gray-950">
+            <a><span>Règlement</span></a>
+          </li>
+          <li><a href="#">Politique de confidentialité</a></li>
+          <li><a href="https://pokebuildapi.fr/api/v1">API Use</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <ul class="content-end">
+          <li class="font-bold">
+            <span>Plan du site</span>
+          </li>
+          <li>
+            <a href="./index.html">Accueil</a>
+          </li>
+          <li>
+            <a href="./html/pokemonLists.html">Liste des Pokemons</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

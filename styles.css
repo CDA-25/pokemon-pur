@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+@font-face {
+    font-family: 'Pokemon';
+    src: url('./fonts/Pokemon Solid.ttf') format('truetype');
+  }
+  
+  .pokemon {
+    font-family: 'Pokemon', sans-serif;
+    font-size: 6rem;
+    letter-spacing: 10px;
+    color: #FFCB05; /* jaune style Pokémon */
+    text-shadow:
+    -2px -2px 0 #2A75BB,
+    0px -2px 0 #2A75BB,
+    2px -2px 0 #2A75BB,
+   -2px  0px 0 #2A75BB,
+    2px  0px 0 #2A75BB,
+   -2px  2px 0 #2A75BB,
+    0px  2px 0 #2A75BB,
+    2px  2px 0 #2A75BB;
+  }
+  
+h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.text-outline-blue {
+  -webkit-text-stroke: 1.5px #3b82f6;
+}
