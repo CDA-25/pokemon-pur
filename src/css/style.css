@@ -369,6 +369,37 @@ footer a {
   height: 32px;
 }
 
+.stat-block {
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-weight: bold;
+  display: inline-block;
+  width: 100px;
+}
+
+.progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 20px;
+  width: 100%;
+  max-width: 300px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.bar {
+  height: 100%;
+  background-color: #4caf50;
+  text-align: right;
+  padding-right: 5px;
+  line-height: 20px;
+  color: white;
+  font-weight: bold;
+  
+}
 
 /* Responsive */
 
