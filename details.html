@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,41 +8,38 @@
   <link rel="stylesheet" href="./src/css/style.css" />
   <script type="module" src="./src/js/details.js" defer></script>
 </head>
+
 <body>
   <header class="headerOther">
-  <a href="./repertoire.html">
-    <img src="./Photo/Pokédex_logo.png" alt="Logo Pokedex" class="logoPokedex">
-  </a>
-  <button id="btnRetour" class="btn">Retour</button>
-</header>
-  
+    <a href="./repertoire.html">
+      <img src="./Photo/Pokédex_logo.png" alt="Logo Pokedex" class="logoPokedex" />
+    </a>
+    <button id="btnRetour" class="btn">Retour</button>
+  </header>
+
   <main class="bodyDetail">
-  <h1 id="pokemonName"></h1>
-  <img id="pokemonImage" />
-  
+    <h1 id="pokemonName"></h1>
+    <img id="pokemonImage" />
 
-  <div class="detailPokemonUnite"> 
+    <div class="detailPokemonUnite">
+      <p class="titleDetail">Type(s) :</p>
+      <div id="pokemonTypes" class="ligneDetail"></div>
 
-  
-    <p class="titleDetail">Type(s) : </p> 
-    <div id="pokemonTypes" class="ligneDetail"></div> 
+      <p class="titleDetail">Statistiques:</p>
+      <div id="pokemonStats" class="ligneDetail statsContainer"></div>
 
-
-    <p class="titleDetail">Statistiques: </p> 
-    <div id="pokemonStats" class="ligneDetail statsContainer"></div>
-
-    <p class="titleDetail"> Résistances/Faiblesses :</p> 
+    <p class="titleDetail"> Résistances :</p> 
     <div id="pokemonRes" class="ligneDetail"></div> 
 
-    <p class="titleDetail">Génération : </p>
-    <div id="pokemonGen" class="ligneDetail"></div> 
+      <p class="titleDetail">Génération :</p>
+      <div id="pokemonGen" class="ligneDetail"></div>
 
 
-    <p class="titleDetail">Évolution(s) : </p> 
+    <p class="titleDetail">Évolutions : </p> 
     <div id="pokemonEvo" class="ligneDetail"></div> 
 
 
-    <p class="titleDetail">Pré-Évolution : </p> 
+    <p class="titleDetail">Pré-Évolutions : </p> 
     <div id="pokemonPreEvo" class="ligneDetail"></div> 
 
 </div>
@@ -52,10 +50,12 @@
     <ul class="footer">
       <li><a href="./contact.html">Nous contacter</a></li>
       <li><a href="./team.html">Qui sommes nous ?</a></li>
-      <li>Politique de confidentialité</li>
-      <li>Mentions légales</li>
+      <li>
+        <a href="./confidentialite.html">Politique de confidentialité</a>
+      </li>
+      <li><a href="./mentions.html">Mentions légales</a></li>
     </ul>
   </footer>
-
 </body>
+
 </html>
