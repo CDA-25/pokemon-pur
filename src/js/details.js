@@ -71,8 +71,9 @@ window.addEventListener("load", async () => {
     }
 
     document.querySelector("#pokemonGen").textContent = pokemon.apiGeneration;
+    
     const preEvo = document.querySelector("#pokemonPreEvo");
-    preEvo.textContentHTML = "";
+    preEvo.textContent = "";
 
     if (pokemon.apiPreEvolution) {
       const preEvos = Array.isArray(pokemon.apiPreEvolution)
