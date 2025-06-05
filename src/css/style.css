@@ -320,6 +320,10 @@ align-items: center;
  list-style: none;
 }
 
+.formulaireContainer {
+  display: flex;
+  flex-direction: column;
+}
 
 
 /* Responsive */
