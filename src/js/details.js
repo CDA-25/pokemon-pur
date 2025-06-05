@@ -18,7 +18,7 @@ window.addEventListener("load", async () => {
     image.alt = `Image de ${pokemon.name}`;
 
     const typesContainer = document.querySelector("#pokemonTypes");
-    typesContainer.innerHTML = ""; 
+    typesContainer.textContent = "";
 
     pokemon.apiTypes.forEach((type) => {
       const typeDiv = document.createElement("div");
@@ -37,47 +37,42 @@ window.addEventListener("load", async () => {
       typesContainer.appendChild(typeDiv);
     });
 
-// Partie stats
+    const statLabels = {
+      HP: "PV",
+      attack: "Atk",
+      defense: "Def",
+      special_attack: "Atk Spe",
+      special_defense: "Def Spe",
+      speed: "Vit",
+    };
 
-const statLabels = {
-  HP: 'PV',
-  attack: 'Atk',
-  defense: 'Def',
-  special_attack: 'Atk Spe',
-  special_defense: 'Def Spe',
-  speed: 'Vit'
-};
+    const statsContainer = document.querySelector("#pokemonStats");
+    statsContainer.textContent = "";
 
-    const statsContainer = document.querySelector('#pokemonStats');
-statsContainer.innerHTML = '';
+    for (const [stat, value] of Object.entries(pokemon.stats)) {
+      const statDiv = document.createElement("div");
+      statDiv.classList.add("stat-container");
 
-for (const [stat, value] of Object.entries(pokemon.stats)) {
-  const statDiv = document.createElement('div');
-  statDiv.classList.add('stat-container');
+      const label = document.createElement("span");
+      label.textContent = `${statLabels[stat] || stat} : `;
 
-  const label = document.createElement('span');
-  label.textContent = `${statLabels[stat] || stat} : `;
+      const bar = document.createElement("div");
+      bar.classList.add("progress-bar");
 
-  const bar = document.createElement('div');
-  bar.classList.add('progress-bar');
+      const fill = document.createElement("div");
+      fill.classList.add("bar");
+      fill.style.width = `${value / 2}%`;
+      fill.textContent = value;
 
-  const fill = document.createElement('div');
-  fill.classList.add('bar');
-  fill.style.width = `${value / 2}%`;
-  fill.textContent = value;
-
-  bar.appendChild(fill);
-  statDiv.appendChild(label);
-  statDiv.appendChild(bar);
-  statsContainer.appendChild(statDiv);
-}
-
-
-
+      bar.appendChild(fill);
+      statDiv.appendChild(label);
+      statDiv.appendChild(bar);
+      statsContainer.appendChild(statDiv);
+    }
 
     document.querySelector("#pokemonGen").textContent = pokemon.apiGeneration;
     const preEvo = document.querySelector("#pokemonPreEvo");
-    preEvo.innerHTML = "";
+    preEvo.textContentHTML = "";
 
     if (pokemon.apiPreEvolution) {
       const preEvos = Array.isArray(pokemon.apiPreEvolution)
@@ -123,7 +118,7 @@ for (const [stat, value] of Object.entries(pokemon.stats)) {
     }
 
     const evoContainer = document.querySelector("#pokemonEvo");
-    evoContainer.innerHTML = "";
+    evoContainer.textContent = "";
 
     if (pokemon.apiEvolutions && pokemon.apiEvolutions.length > 0) {
       for (const evo of pokemon.apiEvolutions) {

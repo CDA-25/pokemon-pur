@@ -305,17 +305,22 @@ footer a {
   
 }
 
-<<<<<<< HEAD
-.mentionsObligatoiresContainer{
-  list-style: none;
+.containerMention {
   display: flex;
   justify-content: center;
+align-items: center;
 }
-=======
+
+.mentionsObligatoiresContainer {
+  padding: 5rem;
+  font-size: 2em;
+}
+
+.mentionsObligatoiresContainer ul li {
+ list-style: none;
+}
 
 
-
->>>>>>> b6ae9e2c5b95fd4c07c02f971e5124c36403bd94
 
 /* Responsive */
 

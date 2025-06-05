@@ -1,6 +1,6 @@
 class ServicePokemon {
   constructor() {
-    this.url = 'https://pokebuildapi.fr/api/v1/pokemon';
+    this.url = "https://pokebuildapi.fr/api/v1/pokemon";
   }
 
   async recupererPokemons() {

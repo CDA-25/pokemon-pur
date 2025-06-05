@@ -14,15 +14,10 @@ window.addEventListener('load', function () {
         data.forEach(pokemon => {
             for (const key in pokemon) {
                 if (Array.isArray(pokemon[key])) {
-                    console.log(`id:: ${pokemon.id}, Pokemon: ${pokemon.name}`);
+                    console.log(`id:: ${pokemon.id}, Pokemon: ${pokemon.name}`)
                 }
             }
-        });
+        })
     })()
-
-
-
-
-    // class pokemon = propriétés de l'objet de l'api etc 
 
 })
