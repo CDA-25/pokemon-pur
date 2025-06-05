@@ -194,7 +194,7 @@ footer a {
 }
 
 #pokemonRes > div {
-  flex: 1 1 calc(33.33% - 30px);
+  flex: 1 1 calc(15% - 30px);
   border-radius: 8px;
   padding: 10px;
 }
@@ -284,19 +284,19 @@ footer a {
 }
 
 .progress-bar {
-  background-color: #e0e0e0;
+  background-color: #f1efdb;
   border-radius: 5px;
   overflow: hidden;
   height: 20px;
   width: 100%;
-  max-width: 300px;
+  min-width: 90px;
   display: inline-block;
   vertical-align: middle;
 }
 
 .bar {
   height: 100%;
-  background-color: #4caf50;
+  background-color: #04fa2d;
   text-align: right;
   padding-right: 5px;
   line-height: 20px;
