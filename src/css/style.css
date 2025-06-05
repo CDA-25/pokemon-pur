@@ -305,11 +305,17 @@ footer a {
   
 }
 
+<<<<<<< HEAD
 .mentionsObligatoiresContainer{
   list-style: none;
   display: flex;
   justify-content: center;
 }
+=======
+
+
+
+>>>>>>> b6ae9e2c5b95fd4c07c02f971e5124c36403bd94
 
 /* Responsive */
 
