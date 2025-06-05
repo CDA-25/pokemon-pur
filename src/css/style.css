@@ -243,102 +243,6 @@ footer a {
   max-width: 100%;
   border-radius: 12px;
 }
-/* 
-.pokemon-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    padding: 20px 0;
-} 
-
-.pokemon-card {
-    background: #1a1a1a;
-    border-radius: 15px;
-    padding: 15px;
-    box-shadow: 0 0 10px #3A5EAA;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #f6cf57;
-    transition: transform 0.2s ease;
-}
-
-.pokemon-card:hover {
-    transform: scale(1.05);
-}
-
-.pokemon-card img {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-    margin-bottom: 10px;
-}
-
-.pokemon-card h2 {
-    font-family: "Pokemon Solid";
-    font-size: 2rem;
-    margin: 0.5rem 0;
-}
-
-.pokemon-card p {
-    margin: 0.3rem 0;
-    font-size: 1rem;
-    text-align: center;
-}
-
-.pokemon-card a.btn {
-    margin-top: auto;
-    text-decoration: none;
-    color: black;
-    background-color: #ffed4d;
-    padding: 5px 10px;
-    border-radius: 8px;
-}
-
-.pokemon-card a.btn:hover {
-    background-color: #f6cf57;
-}
-
-.pokemon-detail {
-    max-width: 600px;
-    margin: 2rem auto;
-    background: #1a1a1a;
-    border-radius: 20px;
-    padding: 2rem;
-    color: #f6cf57;
-    box-shadow: 0 0 15px #3A5EAA;
-}
-
-.pokemon-detail img {
-    display: block;
-    margin: 0 auto 1rem auto;
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
-}
-
-.pokemon-detail h2 {
-    font-family: "Pokemon Solid";
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.pokemon-detail p {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-}
-
-.pokemon-detail ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 1rem;
-    font-size: 1.1rem;
-}
-
-.pokemon-detail ul li {
-    padding: 5px 0;
-} */
 
 .containerSearch {
   display: flex;
@@ -399,6 +303,12 @@ footer a {
   color: white;
   font-weight: bold;
   
+}
+
+.mentionsObligatoiresContainer{
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 /* Responsive */
