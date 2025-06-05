@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pokemon au complet</title>
+  </head>
+  <body>
+    <!-- En-tête avec la bannière -->
+    <header>
+      <!-- Bannière du site avec image -->
+      <section class="banner">
+        <img src="/image/banniere.png" alt="Bannière Pokémon" />
+      </section>
+    </header>
+    
+    <!-- Structure principale avec menu latéral et contenu -->
+    <div class="layout">
+      <!-- Menu de navigation latéral -->
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a class="btn" href="/index.html">Accueil</a></li>
+          <li><a class="btn" href="/liste.html">Pokédex</a></li>
+          <li><a class="btn" href="/generation.html">Génération</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Contenu principal de la page Pokédex -->
+      <main>
+        <!-- Titre de la page -->
+        <h1 class="text">Pokédex complet</h1>
+        
+        <!-- Conteneur pour le menu de filtrage et la barre de recherche (rempli par JavaScript) -->
+        <div id="menu-container" class="generation-menu"> </div>
+        
+        <!-- Conteneur pour l'affichage de tous les Pokémon (rempli par JavaScript) -->
+        <div id="pokemon-container" class="pokemon-grid"></div>
+
+        <!-- Popup pour afficher les détails d'un Pokémon (initialement caché) -->
+        <div id="popup" class="popup">
+          <!-- Contenu de la popup (rempli dynamiquement) -->
+          <div id="popup-content" class="popup-content"></div>
+          <!-- Bouton pour fermer la popup -->
+          <button id="close-popup" class="close-popup">Fermer</button>
+        </div>
+      </main>
+    </div>
+    
+    <!-- Pied de page -->
+    <footer class="footer">
+      © 2025 Le Repaire des Dresseurs - Tous droits réservés.
+    </footer>
+    
+    <!-- Chargement des scripts JavaScript -->
+    <script src="menu.js"></script>
+    <script src="asyncAwait.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pokémon par Génération</title>
+  </head>
+  <body>
+    <!-- En-tête avec la bannière -->
+    <header>
+      <!-- Bannière du site avec image -->
+      <section class="banner">
+        <img src="/image/banniere.png" alt="Bannière Pokémon" />
+      </section>
+    </header>
+    
+    <!-- Structure principale avec menu latéral et contenu -->
+    <div class="layout">
+      <!-- Menu de navigation latéral -->
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a class="btn" href="/index.html">Accueil</a></li>
+          <li><a class="btn" href="/liste.html">Pokédex</a></li>
+          <li><a class="btn" href="/generation.html">Génération</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Contenu principal de la page -->
+      <main>
+        <!-- Titre de la page -->
+        <h1 class="text">Pokémon par Génération</h1>
+        
+        <!-- Conteneur pour les boutons de génération (rempli par JavaScript) -->
+        <div id="generation-menu"></div>
+        
+        <!-- Conteneur pour afficher les Pokémons de la génération sélectionnée -->
+        <div id="generation-container"></div>
+      </main>
+    </div>
+    
+    <!-- Pied de page -->
+    <footer class="footer">
+      © 2025 Le Repaire des Dresseeurs - Tous droits réservés.
+    </footer>
+    
+    <!-- Chargement du script JavaScript pour la page de génération -->
+    <script src="generation.js"></script>
+  </body>
+</html>
+
