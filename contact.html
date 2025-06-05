@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,18 @@
     <link rel="stylesheet" href="./src/css/style.css">
     <script type="module" src="./src/js/contact.js" defer></script>
 </head>
+
 <body>
     <header class="headerAccueil">
-        <img class="imgCarapuce" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjJteGd6YzZqMDNkeHVxdmF3aXA1YnZqams0YWVpcmxjdHY0ZmhvNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/1244FhGdjBNQ2c/giphy.gif" alt="Sacha et Pikachu" />
+        <img class="imgCarapuce"
+            src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjJteGd6YzZqMDNkeHVxdmF3aXA1YnZqams0YWVpcmxjdHY0ZmhvNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/1244FhGdjBNQ2c/giphy.gif"
+            alt="Sacha et Pikachu" />
     </header>
     <main>
         <h1 class="title">Nous contacter</h1>
         <section class="teamContainer">
-        <div class="formulaireContainer">
-            <h1> Formulaire de contact</h1>
+            <div class="formulaireContainer">
+                <h1> Formulaire de contact</h1>
                 <form action="contact" method="post" class="formulaire">
                     <label for="nom">Ton nom :</label>
                     <input type="text" id="nom" name="nom" required>
@@ -29,22 +33,23 @@
                     <label for="destinataire">Choisis un destinataire :</label>
 
                     <select id="destinataire" name="destinataire">
-                    <option value="sacha">Sacha</option>
-                    <option value="ondine">Ondine</option>
+                        <option value="sacha">Sacha</option>
+                        <option value="ondine">Ondine</option>
                     </select>
-                    
+
                     <button type="submit">Envoyer le message</button>
                 </form>
-        </div>
-        
+            </div>
+
     </main>
     <footer>
-    <ul class="footer">
-        <li><a href="./contact.html">Nous contacter</a></li>
-        <li><a href="./team.html">Qui sommes nous ?</a></li>
-        <li>Politique de confidentialité</li>
-        <li>Mentions légales</li>
-    </ul>
-</footer>
+        <ul class="footer">
+            <li><a href="./contact.html">Nous contacter</a></li>
+            <li><a href="./team.html">Qui sommes nous ?</a></li>
+            <li><a href="./confidentialite.html">Politique de confidentialité</a></li>
+            <li><a href="./mentions.html">Mentions légales</a></li>
+        </ul>
+    </footer>
 </body>
+
 </html>
